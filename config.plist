@@ -14,8 +14,12 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
+				<key>AddDTGP</key>
+				<false/>
 				<key>DeleteUnused</key>
 				<true/>
+				<key>FixAirport</key>
+				<false/>
 				<key>FixDarwin7</key>
 				<false/>
 				<key>FixHDA</key>
@@ -170,7 +174,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -no_compat_check -brcmfxbeta brcmfx-driver=1 brcmfx-country=US -v</string>
+		<string>dart=0 -no_compat_check -brcmfxbeta brcmfx-driver=2</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -275,6 +279,19 @@
 				<key>model</key>
 				<string>200 Series PCH PCI Express Root Port #6</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0</string>
+				<key>compatible</key>
+				<string>pci14e4,43a3</string>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>BCM4350 802.11ac Wireless Network Adapter</string>
+				<key>name</key>
+				<string>Airport Extreme</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -310,6 +327,19 @@
 				<string>Memory controller</string>
 				<key>model</key>
 				<string>200 Series/Z370 Chipset Family Power Management Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
+				<integer>1</integer>
+				<key>model</key>
+				<string>200 Series PCH HD Audio</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x4)</key>
 			<dict>
@@ -372,7 +402,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>NextBlack</string>
+		<string>Minimalism</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
