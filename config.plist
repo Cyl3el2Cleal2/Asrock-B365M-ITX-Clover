@@ -174,7 +174,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -no_compat_check brcmfx-driver=1 brcmfx-country=#a</string>
+		<string>dart=0 -no_compat_check brcmfx-driver=1 brcmfx-country=#a shikigva=128</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -192,7 +192,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>3</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -211,6 +211,11 @@
 			<true/>
 			<key>ResetHDA</key>
 			<false/>
+		</dict>
+		<key>FakeID</key>
+		<dict>
+			<key>IntelGFX</key>
+			<string>0x3E928086</string>
 		</dict>
 		<key>LANInjection</key>
 		<true/>
@@ -402,7 +407,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>Minimalism</string>
+		<string>clover-theme-minimal-dark</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -422,6 +427,8 @@
 		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
+		<key>ig-platform-id</key>
+		<string>0x3E920003</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
